@@ -43,8 +43,8 @@ app.use("/api", limiter)
 app.use(mongoSanitization());
 app.use(xss());
 app.use((req, res, next)=>{
-    console.log("Before hpp:");
-    console.log(req.query);
+    // console.log("Before hpp:");
+    // console.log(req.query);
     next()
     
 })
